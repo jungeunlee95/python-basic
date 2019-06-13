@@ -151,9 +151,21 @@ print(l)
 l.sort(key=int);
 print(l)
 
+# cf. 내장(전역)함수 sorted
+print('------sorted------')
+l3 = [10, 2, 22, 9, 8, 12, 14]
+l4 = sorted(l3)
+print(l4)
 
+l4 = sorted(l3, reverse=True)
+print(l4)
 
-
+print('------sorted key------')
+l3 = [10, 46, 22, 93, 81, 35, 44]
+def f(n):
+    return n % 10
+l4 = sorted(l3, key=f)
+print(l4)
 
 
 
